@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        JAVA_HOME = "C:\\Program Files\\Java\\jdk-21"
+        JAVA_HOME = "C:\\Users\\Atharv Jaiswal\\Downloads\\jdk-21_windows-x64_bin\\jdk-21.0.10"
         PATH = "${JAVA_HOME}\\bin;${env.PATH}"
     }
 
