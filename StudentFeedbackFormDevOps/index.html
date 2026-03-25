@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+    <style>
+        /* Internal CSS - for demo purposes */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Student Feedback Registration</h2>
+        <form id="feedbackForm" onsubmit="return validateForm()">
+
+            <label>Student Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span class="error" id="nameError"></span>
+
+            <label>Email ID:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <span class="error" id="emailError"></span>
+
+            <label>Mobile Number:</label>
+            <input type="text" id="mobile" placeholder="Enter 10-digit number">
+            <span class="error" id="mobileError"></span>
+
+            <label>Department:</label>
+            <select id="department">
+                <option value="">-- Select Department --</option>
+                <option value="CS">Computer Science</option>
+                <option value="IT">Information Technology</option>
+                <option value="EC">Electronics</option>
+                <option value="ME">Mechanical</option>
+            </select>
+            <span class="error" id="deptError"></span>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <span class="error" id="genderError"></span>
+
+            <label>Feedback Comments:</label>
+            <textarea id="feedback" rows="4" placeholder="Write at least 10 words..."></textarea>
+            <span class="error" id="feedbackError"></span>
+
+            <div class="btn-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
